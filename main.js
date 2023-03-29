@@ -159,7 +159,7 @@ app.post('/clientRect', (req, res) => {
 })
 
 app.post('/buttonLocation', (reqButton, res) => {
-    console.log("BUTTON FUCKING HERE LOOK NIGGA LOOK")
+    console.log("BUTTON DETECTED")
     console.log("ButtonRect \n", reqButton.body)
     let buttonClientRectCoord = JSON.parse(reqButton.body.results3)["0"]
     buttonClientRectX = buttonClientRectCoord.x,
